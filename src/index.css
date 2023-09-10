@@ -1,0 +1,78 @@
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 4rem;
+	text-align: center;
+}
+.container > h1 {
+	color: palevioletred;
+}
+.container > form {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 1rem;
+	padding-bottom: 2rem;
+}
+.container > form > #todoInput {
+	width: 80%;
+	padding: 8px;
+	height: 3rem;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	/* margin-right: 1rem; */
+	outline: none;
+}
+.container > form > #submitBtn {
+	width: 15%;
+	height: 3rem;
+}
+.container > #todoInput:focus {
+	outline: none;
+	border: 1px solid palevioletred;
+}
+
+.todo {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+}
+.todo > div {
+	display: flex;
+}
+
+.todo .checkbox {
+	margin-right: 5px;
+	height: 2rem;
+	width: 2rem;
+}
+.todo .strike {
+	text-decoration: line-through;
+}
+
+.todo .deleteBtn {
+	margin-left: 5px;
+	height: 2rem;
+	width: 2rem;
+	color: tomato;
+	font-weight: 600;
+	background-color: rgba(255, 99, 71, 0.2);
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
